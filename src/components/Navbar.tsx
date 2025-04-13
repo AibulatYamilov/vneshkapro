@@ -29,15 +29,13 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"}`}>
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex justify-between items-center">
-          <a href="#" className="font-cormorant text-2xl font-semibold">Liya Akhaz</a>
+          <a href="#" className="text-2xl font-bold">ВнешкаPRO</a>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            <a href="#home" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Home</a>
-            <a href="#about" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">About</a>
-            <a href="#resume" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Resume</a>
-            <a href="#projects" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Projects</a>
-            <a href="#contact" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Contact</a>
+            <a href="#features" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Возможности</a>
+            <a href="#clients" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Клиенты</a>
+            <a href="#cta" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Начать</a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -54,11 +52,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-white py-4 shadow-md`}>
         <div className="container mx-auto px-4 flex flex-col space-y-4">
-          <a href="#home" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Home</a>
-          <a href="#about" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>About</a>
-          <a href="#resume" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Resume</a>
-          <a href="#projects" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Projects</a>
-          <a href="#contact" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Contact</a>
+          <a href="#features" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Возможности</a>
+          <a href="#clients" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Клиенты</a>
+          <a href="#cta" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Начать</a>
         </div>
       </div>
     </nav>
