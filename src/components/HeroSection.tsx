@@ -20,12 +20,21 @@ const HeroSection = () => {
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
               Не гадайте. Знайте точно.
             </p>
-            <a 
-              href="#features" 
-              className="inline-block gradient-primary text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
-            >
-              Начать с ВнешкаPRO
-            </a>
+            
+            <div className="space-y-6">
+              <a 
+                href="#features" 
+                className="inline-block gradient-primary text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+              >
+                Начать с <span className="border-b-2 border-white">ВНЕШКА<span className="text-[#D6BCFA]">PRO</span></span>
+              </a>
+              
+              <div className="mt-6 max-w-lg mx-auto bg-white/80 backdrop-blur-sm p-4 rounded-xl shadow-sm">
+                <p className="text-gray-700 text-lg">
+                  Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
