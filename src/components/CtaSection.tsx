@@ -1,5 +1,5 @@
 
-import { Beam, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 
 const CtaSection = () => {
   return (
@@ -9,7 +9,7 @@ const CtaSection = () => {
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-[#5201fe]/0 via-[#5201fe]/20 to-[#5201fe]/0"></div>
       
       <div className="absolute -bottom-20 -left-20 text-[#5201fe]/10 rotate-45">
-        <Beam size={200} strokeWidth={1} />
+        <Sparkles size={200} strokeWidth={1} />
       </div>
       
       <div className="absolute top-10 right-20 text-[#5201fe]/10">
