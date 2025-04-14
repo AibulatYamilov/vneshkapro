@@ -31,10 +31,8 @@ const FeaturesSection = () => {
         <div className="max-w-5xl mx-auto text-center mb-16">
           <div className="flex justify-center mb-12">
             <div className="text-center">
-              <div className="flex items-center justify-center gap-6 text-4xl md:text-5xl font-bold mb-10">
-                <span className="text-gray-800">PRO</span>
-                <span className="text-[#5201fe]">→</span>
-                <span className="text-gray-800">ВНЕШКАPRO</span>
+              <div className="font-montserrat text-xl md:text-2xl font-medium max-w-2xl mx-auto mb-6 text-[#5201fe]">
+                Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат.
               </div>
               <div className="flex justify-center">
                 <div className="w-16 h-1 bg-[#5201fe] my-2"></div>
