@@ -32,7 +32,9 @@ const FeaturesSection = () => {
           <div className="flex justify-center mb-12">
             <div className="text-center">
               <div className="font-montserrat text-xl md:text-2xl font-medium max-w-2xl mx-auto mb-6 text-[#5201fe]">
-                Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат.
+                <span className="inline-block bg-white/30 px-4 py-2 rounded-lg backdrop-blur-sm">
+                  Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат
+                </span>
               </div>
               <div className="flex justify-center">
                 <div className="w-16 h-1 bg-[#5201fe] my-2"></div>
