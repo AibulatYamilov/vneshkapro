@@ -10,17 +10,17 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Платите за рекламу,<br />но не знаете,<br />насколько она эффективна?
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
+              Отслеживайте эффективность<br />рекламы у блогеров —<br />в реальном времени,<br />без догадок.
             </h1>
-            <p className="text-lg md:text-xl mb-10">
-              Начните использовать ВнешкуPRO!
+            <p className="text-xl md:text-2xl mb-10 font-medium text-gray-700">
+              → Просто. Точно. По делу.
             </p>
             <a 
               href="#features" 
-              className="inline-block bg-[#f4ff7d] text-black font-bold text-lg px-10 py-3 rounded-full hover:bg-[#eaff52] transition-colors shadow-md"
+              className="inline-block bg-[#9b87f5] text-white font-bold text-lg px-10 py-3 rounded-full hover:bg-[#7E69AB] transition-all duration-300 ease-in-out shadow-lg transform hover:-translate-y-1 hover:scale-105"
             >
-              Вперед!
+              Начать с ВнешкаPRO
             </a>
           </div>
         </div>
@@ -30,3 +30,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
