@@ -1,4 +1,6 @@
 
+import React from 'react';
+
 const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
@@ -10,7 +12,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
-            <h1 className="font-cormorant text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
+            <h1 className="font-['Arial_Black'] text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
               Отслеживайте эффективность<br />рекламы у блогеров —<br />в реальном времени,<br />без догадок.
             </h1>
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
