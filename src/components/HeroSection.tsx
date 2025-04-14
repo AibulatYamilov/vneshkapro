@@ -12,8 +12,10 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
-            <h1 className="font-arial-black text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
-              Отслеживайте эффективность рекламы в реальном времени.
+            <h1 className="font-arial-black text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900 max-w-4xl">
+              <span className="block">Отслеживайте</span>
+              <span className="block">эффективность рекламы</span>
+              <span className="block">в реальном времени.</span>
             </h1>
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
               Не гадайте. Знайте точно.
