@@ -20,6 +20,14 @@ const HeroSection = () => {
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
               Не гадайте. Знайте точно.
             </p>
+            
+            {/* Product description added with nice styling */}
+            <div className="mb-10 px-6 py-5 rounded-xl gradient-secondary shadow-sm">
+              <p className="font-montserrat text-lg text-gray-800 leading-relaxed">
+                Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат.
+              </p>
+            </div>
+            
             <a 
               href="#features" 
               className="inline-block gradient-primary text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
