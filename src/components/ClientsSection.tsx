@@ -46,18 +46,18 @@ const ClientsSection = () => {
   ];
 
   return (
-    <section id="clients" className="py-20 bg-gradient-to-br from-[#9b87f5] to-[#D6BCFA]">
+    <section id="clients" className="py-20 gradient-accent">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
           <p className="text-lg mb-4 text-white">Совсем не важно, где вы размещаете рекламу</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-10 text-white">
+          <h2 className="font-cormorant text-4xl md:text-5xl font-bold mb-10 text-white">
             Вся аналитика в<br />одном месте
           </h2>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
           {platformLogos.map((platform, index) => (
-            <div key={index} className="bg-white/20 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center justify-center">
+            <div key={index} className="bg-white/20 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center justify-center hover:bg-white/30 transition-colors duration-300">
               {platform.logo}
               <div className="text-white font-medium mt-2">{platform.name}</div>
             </div>
