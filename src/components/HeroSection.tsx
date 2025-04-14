@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowUpRight, CircleArrowUp, CircleArrowRight, Sparkles, Star } from "lucide-react";
+import { ArrowUpRight, CircleArrowUp, CircleArrowRight, Beam } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -22,10 +22,10 @@ const HeroSection = () => {
         
         {/* Light beams */}
         <div className="absolute -top-20 left-[30%] text-[#e7dcff]/30 rotate-45">
-          <Sparkles size={200} strokeWidth={1} />
+          <Beam size={200} strokeWidth={1} />
         </div>
         <div className="absolute bottom-0 right-[20%] text-[#e7dcff]/20 -rotate-12">
-          <Star size={160} strokeWidth={1} />
+          <Beam size={160} strokeWidth={1} />
         </div>
         
         {/* Light lines */}
