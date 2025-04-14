@@ -16,7 +16,7 @@ const HeroSection = () => {
               Отслеживайте эффективность рекламы в реальном времени.
             </h1>
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
-              Просто. Точно. По делу.
+              Не гадайте. Знайте точно.
             </p>
             <a 
               href="#features" 
@@ -32,4 +32,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
