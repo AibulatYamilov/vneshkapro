@@ -20,6 +20,7 @@ export default {
 		fontFamily: {
 			'cormorant': ['"Cormorant Garamond"', 'serif'],
 			'montserrat': ['Montserrat', 'sans-serif'],
+			'arial-black': ['"Arial Black"', 'Arial', 'sans-serif'],
 		},
 		extend: {
 			colors: {
