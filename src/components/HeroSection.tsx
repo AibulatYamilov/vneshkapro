@@ -13,7 +13,8 @@ const HeroSection = () => {
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
             <h1 className="font-arial-black text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900">
-              Отслеживайте эффективность<br />рекламы у блогеров —<br />в реальном времени,<br />без догадок.
+              Отслеживайте эффективность<br />рекламы в реальном времени.<br />
+              Не гадайте. Знайте точно.
             </h1>
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
               → Просто. Точно. По делу.
@@ -32,4 +33,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
