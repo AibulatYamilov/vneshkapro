@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col items-center">
           <div className="text-center font-montserrat text-lg text-white/70 mb-6">
-            <p className="font-['Carter_One'] text-3xl text-[#ffffff]">Связь с нами — через @bot</p>
+            <p className="font-['Carter_One'] text-3xl text-[#ffffff] mb-4">Связь с нами — через @bot </p>
           </div>
           
           <h2 className="text-3xl font-bold mb-6 text-white font-['Carter_One']">
