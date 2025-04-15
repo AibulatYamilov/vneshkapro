@@ -1,5 +1,5 @@
 
-import { Instagram, Twitter, Linkedin, Mail } from "lucide-react";
+import React from 'react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,19 +12,8 @@ const Footer = () => {
             <span className="text-[#78e29e]">Внешка</span>PRO
           </h2>
           
-          <div className="flex gap-6 mb-8">
-            <a href="#" className="w-10 h-10 rounded-full border border-[#78e29e]/30 flex items-center justify-center hover:bg-[#78e29e] hover:text-[#2a4b8d] transition-colors">
-              <Instagram size={18} />
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-[#78e29e]/30 flex items-center justify-center hover:bg-[#78e29e] hover:text-[#2a4b8d] transition-colors">
-              <Twitter size={18} />
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-[#78e29e]/30 flex items-center justify-center hover:bg-[#78e29e] hover:text-[#2a4b8d] transition-colors">
-              <Linkedin size={18} />
-            </a>
-            <a href="#" className="w-10 h-10 rounded-full border border-[#78e29e]/30 flex items-center justify-center hover:bg-[#78e29e] hover:text-[#2a4b8d] transition-colors">
-              <Mail size={18} />
-            </a>
+          <div className="text-center font-montserrat text-sm text-white/70 mb-4">
+            <p className="font-['Carter_One']">Связь с нами — через @bot</p>
           </div>
           
           <div className="text-center font-montserrat text-sm text-white/70">
