@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, BarChart2, TrendingUp } from "lucide-react";
+import { ArrowRight, Sparkles, BarChart2, TrendingUp, CheckCircle, PieChart } from "lucide-react";
 import { useState } from "react";
 
 const CtaSection = () => {
@@ -8,25 +8,25 @@ const CtaSection = () => {
   
   return (
     <section id="cta" className="py-24 relative overflow-hidden">
-      {/* Background with animated gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#f4f7ff] via-[#e7dcff] to-[#ffdee2] background-animate"></div>
+      {/* Background with gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#f4f7ff] via-[#e7dcff] to-[#ffdee2]"></div>
       
-      {/* Animated patterns */}
+      {/* Animated pattern overlay */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-[#5201fe] blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 rounded-full bg-[#78e29e] blur-3xl animate-pulse" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute top-20 left-1/4 w-72 h-72 rounded-full bg-[#5201fe]/40 blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-1/4 w-96 h-96 rounded-full bg-[#78e29e]/40 blur-3xl animate-pulse" style={{ animationDelay: "1.5s" }}></div>
       </div>
       
       <div className="container relative mx-auto px-4 md:px-8 z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl p-10 md:p-16 border border-white/20">
-            <div className="flex justify-center mb-8">
-              <div className="flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white">
-                <Sparkles className="w-10 h-10" />
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl p-10 md:p-16 border border-white/30 transform transition-all duration-500 hover:shadow-2xl">
+            <div className="flex justify-center mb-10">
+              <div className="flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white shadow-lg shadow-primary/20">
+                <Sparkles className="w-12 h-12" />
               </div>
             </div>
             
-            <h2 className="font-['Carter_One'] text-3xl md:text-4xl lg:text-5xl text-[#2a4b8d] mb-10 text-center leading-relaxed">
+            <h2 className="font-['Carter_One'] text-3xl md:text-5xl text-[#2a4b8d] mb-12 text-center leading-tight">
               <span className="inline-block">Ты не просто продаёшь.</span>{" "}
               <span className="inline-block text-[#5201fe]">Ты считаешь деньги.</span>
               <br />
@@ -35,39 +35,54 @@ const CtaSection = () => {
               </span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 mb-12">
-              <div className="flex items-center space-x-4 bg-white/50 p-6 rounded-xl shadow-sm">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e7dcff] flex items-center justify-center">
-                  <BarChart2 className="w-6 h-6 text-[#5201fe]" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 mb-14">
+              <div className="flex flex-col items-center p-6 rounded-2xl bg-gradient-to-br from-white to-[#f4f7ff] shadow-md hover:shadow-lg transition-all duration-300 group">
+                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#e7dcff] flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300">
+                  <BarChart2 className="w-8 h-8 text-[#5201fe]" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-[#2a4b8d]">Полная аналитика</h3>
-                  <p className="text-[#5b6b8c]">Все данные в одном месте</p>
-                </div>
+                <h3 className="text-xl font-bold text-[#2a4b8d] mb-2">Полная аналитика</h3>
+                <p className="text-[#5b6b8c] text-center">Все данные в одном месте с удобной визуализацией</p>
               </div>
               
-              <div className="flex items-center space-x-4 bg-white/50 p-6 rounded-xl shadow-sm">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[#e7dcff] flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-[#5201fe]" />
+              <div className="flex flex-col items-center p-6 rounded-2xl bg-gradient-to-br from-white to-[#f4f7ff] shadow-md hover:shadow-lg transition-all duration-300 group">
+                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#e7dcff] flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300">
+                  <TrendingUp className="w-8 h-8 text-[#5201fe]" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-bold text-[#2a4b8d]">Рост конверсии</h3>
-                  <p className="text-[#5b6b8c]">Увеличение эффективности</p>
+                <h3 className="text-xl font-bold text-[#2a4b8d] mb-2">Рост конверсии</h3>
+                <p className="text-[#5b6b8c] text-center">Увеличение эффективности вашего рекламного бюджета</p>
+              </div>
+              
+              <div className="flex flex-col items-center p-6 rounded-2xl bg-gradient-to-br from-white to-[#f4f7ff] shadow-md hover:shadow-lg transition-all duration-300 group">
+                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#e7dcff] flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300">
+                  <PieChart className="w-8 h-8 text-[#5201fe]" />
                 </div>
+                <h3 className="text-xl font-bold text-[#2a4b8d] mb-2">Умные отчеты</h3>
+                <p className="text-[#5b6b8c] text-center">Автоматическое выявление ключевых точек роста</p>
+              </div>
+            </div>
+            
+            <div className="flex flex-col md:flex-row items-center justify-between p-6 rounded-2xl bg-gradient-to-r from-[#f4f7ff] to-[#e7dcff] mb-12">
+              <div className="flex items-start space-x-3 mb-4 md:mb-0">
+                <CheckCircle className="w-6 h-6 text-[#78e29e] flex-shrink-0 mt-1" />
+                <p className="text-[#2a4b8d] font-medium">Бесплатный пробный период на 14 дней</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle className="w-6 h-6 text-[#78e29e] flex-shrink-0 mt-1" />
+                <p className="text-[#2a4b8d] font-medium">Техническая поддержка 24/7</p>
               </div>
             </div>
             
             <div className="mt-10 text-center">
               <div 
-                className="relative inline-block group"
+                className="relative inline-block"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                <div className={`absolute -inset-1 bg-gradient-to-r from-[#5201fe] to-[#78e29e] rounded-full blur-md transition-all duration-500 ${isHovered ? 'opacity-100' : 'opacity-0'}`}></div>
+                <div className={`absolute -inset-1 bg-gradient-to-r from-[#5201fe] to-[#78e29e] rounded-full blur opacity-70 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}></div>
                 <Button 
-                  className="relative bg-gradient-to-r from-[#78e29e] to-[#5201fe] hover:from-[#5201fe] hover:to-[#78e29e] text-white font-bold px-10 py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 text-lg h-auto"
+                  className="relative bg-gradient-to-r from-[#5201fe] to-[#78e29e] hover:from-[#78e29e] hover:to-[#5201fe] text-white font-bold px-10 py-7 rounded-full shadow-lg transition-all duration-500 text-lg h-auto"
                 >
-                  Начать анализировать <ArrowRight className="ml-2" />
+                  Начать анализировать <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
             </div>
@@ -75,16 +90,14 @@ const CtaSection = () => {
         </div>
       </div>
       
-      {/* Add CSS for the background animation */}
-      <style jsx>{`
-        @keyframes gradient {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
+      <style>{`
+        @keyframes pulse {
+          0% { transform: scale(0.95); opacity: 0.7; }
+          50% { transform: scale(1.05); opacity: 0.9; }
+          100% { transform: scale(0.95); opacity: 0.7; }
         }
-        .background-animate {
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
+        .animate-pulse {
+          animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
       `}</style>
     </section>
