@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
-            <h1 className="font-arial-black text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-900 max-w-4xl">
+            <h1 className="font-arial-black text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-[#000000] max-w-4xl">
               <span className="block">Отслеживайте</span>
               <span className="block">эффективность рекламы</span>
               <span className="block">в реальном времени.</span>
@@ -22,7 +22,7 @@ const HeroSection = () => {
             </p>
             <a 
               href="#features" 
-              className="inline-block gradient-primary text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+              className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
             >
               Начать с ВнешкаPRO
             </a>
