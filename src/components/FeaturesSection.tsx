@@ -26,7 +26,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-[#f4efec]">
+    <section id="features" className="py-20 bg-gradient-to-r from-[#e5deff]/80 via-[#ffffff] to-[#d6bcfa]/50">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <div className="flex justify-center mb-12">
@@ -37,7 +37,7 @@ const FeaturesSection = () => {
                 </span>
               </div>
               <div className="flex justify-center">
-                <div className="w-16 h-1 bg-[#5201fe] my-2"></div>
+                <div className="w-16 h-1 bg-gradient-to-r from-[#5201fe] to-[#78e29e] my-2"></div>
               </div>
             </div>
           </div>
