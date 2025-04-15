@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Card } from "@/components/ui/card";
 
 const ClientsSection = () => {
   const platformLogos = [
@@ -55,17 +56,17 @@ const ClientsSection = () => {
           </h2>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
           {platformLogos.map((platform, index) => (
-            <div key={index} className="bg-white/20 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center justify-center hover:bg-white/30 transition-colors duration-300">
+            <Card key={index} className="bg-white/20 backdrop-blur-sm p-8 rounded-xl flex flex-col items-center justify-center hover:scale-105 hover:bg-white/30 transition-all duration-300 border-0 shadow-md">
               {platform.logo}
-              <div className="text-white font-medium mt-2">{platform.name}</div>
-            </div>
+              <div className="text-white font-medium mt-4 font-['Carter_One']">{platform.name}</div>
+            </Card>
           ))}
         </div>
         
         <div className="text-center">
-          <p className="text-lg text-white/80 italic">И другие доступные платформы</p>
+          <p className="text-lg text-white/90 italic font-['Carter_One']">И другие доступные платформы</p>
         </div>
       </div>
     </section>
