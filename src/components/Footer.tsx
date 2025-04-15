@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="py-12 bg-[#2a4b8d] text-white">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl font-bold mb-6 text-white">
+          <h2 className="text-3xl font-bold mb-6 text-white font-['Carter_One']">
             <span className="text-[#78e29e]">Внешка</span>PRO
           </h2>
           
