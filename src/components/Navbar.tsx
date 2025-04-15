@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +34,14 @@ const Navbar = () => {
           >
             ВнешкаPRO
           </a>
+          <Button 
+            variant="default" 
+            size="default" 
+            className="bg-[#5201fe] text-white hover:bg-[#5201fe]/90"
+            onClick={() => window.location.href = "#cta"}
+          >
+            Начать
+          </Button>
         </div>
       </div>
     </nav>
