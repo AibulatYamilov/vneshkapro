@@ -35,31 +35,6 @@ const Navbar = () => {
           >
             ВнешкаPRO
           </a>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <a href="#features" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Возможности</a>
-            <a href="#clients" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Клиенты</a>
-            <a href="#cta" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors">Начать</a>
-          </div>
-          
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden focus:outline-none" 
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
-      
-      {/* Mobile Menu */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-white py-4 shadow-md`}>
-        <div className="container mx-auto px-4 flex flex-col space-y-4">
-          <a href="#features" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Возможности</a>
-          <a href="#clients" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Клиенты</a>
-          <a href="#cta" className="font-montserrat text-sm uppercase tracking-wider hover:text-neutral-500 transition-colors" onClick={toggleMenu}>Начать</a>
         </div>
       </div>
     </nav>
