@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, BarChart2, TrendingUp, CheckCircle, PieChart } from "lucide-react";
+import { ArrowRight, CheckCircle, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const CtaSection = () => {
@@ -18,7 +18,7 @@ const CtaSection = () => {
       </div>
       
       <div className="container relative mx-auto px-4 md:px-8 z-10">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl p-10 md:p-16 border border-white/30 transform transition-all duration-500 hover:shadow-2xl">
             <div className="flex justify-center mb-10">
               <div className="flex items-center justify-center w-24 h-24 rounded-full bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white shadow-lg shadow-primary/20">
@@ -35,39 +35,9 @@ const CtaSection = () => {
               </span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 mb-14">
-              <div className="flex flex-col items-center p-6 rounded-2xl bg-gradient-to-br from-white to-[#f4f7ff] shadow-md hover:shadow-lg transition-all duration-300 group">
-                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#e7dcff] flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300">
-                  <BarChart2 className="w-8 h-8 text-[#5201fe]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2a4b8d] mb-2">Полная аналитика</h3>
-                <p className="text-[#5b6b8c] text-center">Все данные в одном месте с удобной визуализацией</p>
-              </div>
-              
-              <div className="flex flex-col items-center p-6 rounded-2xl bg-gradient-to-br from-white to-[#f4f7ff] shadow-md hover:shadow-lg transition-all duration-300 group">
-                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#e7dcff] flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300">
-                  <TrendingUp className="w-8 h-8 text-[#5201fe]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2a4b8d] mb-2">Рост конверсии</h3>
-                <p className="text-[#5b6b8c] text-center">Увеличение эффективности вашего рекламного бюджета</p>
-              </div>
-              
-              <div className="flex flex-col items-center p-6 rounded-2xl bg-gradient-to-br from-white to-[#f4f7ff] shadow-md hover:shadow-lg transition-all duration-300 group">
-                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#e7dcff] flex items-center justify-center mb-5 transition-transform group-hover:scale-110 duration-300">
-                  <PieChart className="w-8 h-8 text-[#5201fe]" />
-                </div>
-                <h3 className="text-xl font-bold text-[#2a4b8d] mb-2">Умные отчеты</h3>
-                <p className="text-[#5b6b8c] text-center">Автоматическое выявление ключевых точек роста</p>
-              </div>
-            </div>
-            
-            <div className="flex flex-col md:flex-row items-center justify-between p-6 rounded-2xl bg-gradient-to-r from-[#f4f7ff] to-[#e7dcff] mb-12">
-              <div className="flex items-start space-x-3 mb-4 md:mb-0">
-                <CheckCircle className="w-6 h-6 text-[#78e29e] flex-shrink-0 mt-1" />
-                <p className="text-[#2a4b8d] font-medium">Бесплатный пробный период на 14 дней</p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="w-6 h-6 text-[#78e29e] flex-shrink-0 mt-1" />
+            <div className="flex items-center justify-center p-5 mb-14">
+              <div className="inline-flex items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-[#f4f7ff] to-[#e7dcff] shadow-md transition-all duration-300">
+                <CheckCircle className="w-6 h-6 text-[#78e29e] flex-shrink-0 mr-3" />
                 <p className="text-[#2a4b8d] font-medium">Техническая поддержка 24/7</p>
               </div>
             </div>
