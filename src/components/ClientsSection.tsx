@@ -65,7 +65,7 @@ const ClientsSection = () => {
     <section id="clients" className="py-20 gradient-accent">
       <div className="container mx-auto px-4 md:px-8">
         <div className="text-center mb-16">
-          <p className="text-xl mb-4 text-white font-['Carter_One']">Совсем не важно, где вы размещаете рекламу —</p>
+          <p className="text-2xl mb-4 text-white font-['Carter_One']">Совсем не важно, где вы размещаете рекламу —</p>
           <h2 className="font-['Carter_One'] text-4xl md:text-5xl font-bold mb-10 text-white">
             Вся аналитика в одном месте
           </h2>
