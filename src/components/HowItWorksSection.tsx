@@ -17,7 +17,7 @@ const HowItWorksSection = () => {
           {/* Text content - Left side */}
           <div className="md:w-1/2 order-2 md:order-1">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 md:p-10 border border-[#E5DEFF]">
-              <h2 className="font-arial-black text-3xl md:text-4xl font-bold mb-8 text-[#6E59A5]">
+              <h2 className="font-arial-black text-2xl md:text-3xl font-bold mb-8 text-[#6E59A5]">
                 Всё просто:
               </h2>
               <div className="space-y-6">
@@ -75,7 +75,7 @@ const HowItWorksSection = () => {
                   <img 
                     src="/lovable-uploads/0c1ee21c-5938-485a-8cb1-a238f1c98905.png" 
                     alt="Панель управления ВнешкаPRO" 
-                    className="w-full h-full object-cover scale-[1.2] origin-center"
+                    className="w-full h-full object-contain scale-100"
                   />
                 </div>
               </div>
@@ -90,3 +90,4 @@ const HowItWorksSection = () => {
 };
 
 export default HowItWorksSection;
+
