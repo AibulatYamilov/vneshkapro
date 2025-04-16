@@ -1,27 +1,27 @@
 
-import { Link2, Activity, Shield, BarChart3 } from "lucide-react";
+import { Link2, Clock, Shield, FileSearch } from "lucide-react";
 
 const FeaturesSection = () => {
   const features = [
     {
       icon: <Link2 className="w-12 h-12 mb-6 text-[#5201fe]" />,
-      title: "Полная аналитика",
-      description: "Все данные в одном месте с удобной визуализацией"
+      title: "Управление ссылками",
+      description: "Создавайте, отслеживайте и оптимизируйте все ваши рекламные ссылки в одном удобном интерфейсе."
     },
     {
-      icon: <Activity className="w-12 h-12 mb-6 text-[#2a4b8d]" />,
-      title: "Рост конверсии",
-      description: "Увеличение эффективности вашего рекламного бюджета"
+      icon: <Clock className="w-12 h-12 mb-6 text-[#2a4b8d]" />,
+      title: "Отслеживание в реальном времени",
+      description: "Получайте данные о производительности рекламных кампаний сразу же после их запуска."
     },
     {
       icon: <Shield className="w-12 h-12 mb-6 text-[#5201fe]" />,
-      title: "Умные отчеты",
-      description: "Автоматическое выявление ключевых точек роста"
+      title: "Защита от накруток",
+      description: "Наша система автоматически определяет и фильтрует ненастоящий трафик."
     },
     {
-      icon: <BarChart3 className="w-12 h-12 mb-6 text-[#2a4b8d]" />,
+      icon: <FileSearch className="w-12 h-12 mb-6 text-[#2a4b8d]" />,
       title: "Полный контроль",
-      description: "Вся история ваших рекламных кампаний всегда под рукой"
+      description: "Вся история ваших рекламных кампаний всегда под рукой."
     },
   ];
 
@@ -31,8 +31,8 @@ const FeaturesSection = () => {
         <div className="max-w-5xl mx-auto text-center mb-16">
           <div className="flex justify-center mb-12">
             <div className="text-center">
-              <div className="font-montserrat text-xl md:text-2xl font-medium max-w-2xl mx-auto mb-6">
-                <span className="text-[#5201fe] font-semibold">
+              <div className="font-montserrat text-xl md:text-2xl font-medium max-w-3xl mx-auto mb-6">
+                <span className="text-[#5201fe] font-semibold whitespace-nowrap">
                   Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат
                 </span>
               </div>
