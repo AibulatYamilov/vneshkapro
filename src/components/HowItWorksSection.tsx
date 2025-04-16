@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Monitor, Check } from "lucide-react";
 
@@ -61,25 +62,25 @@ const HowItWorksSection = () => {
           
           {/* Image container - Right side */}
           <div className="md:w-1/2 order-1 md:order-2">
-            <div className="relative shadow-2xl rounded-2xl overflow-hidden">
-              <div className="bg-[#1A1F2C] rounded-t-2xl p-3 flex justify-between items-center">
+            <div className="relative shadow-xl rounded-xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02]">
+              <div className="bg-[#1A1F2C] rounded-t-xl px-3 py-2 flex justify-between items-center">
                 <div className="flex space-x-2">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                  <div className="w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+                  <div className="w-2.5 h-2.5 bg-yellow-500 rounded-full"></div>
+                  <div className="w-2.5 h-2.5 bg-green-500 rounded-full"></div>
                 </div>
               </div>
-              <div className="bg-[#1A1F2C] rounded-b-2xl p-4 pt-0 pb-10">
-                <div className="bg-[#F1F0FB] rounded-b-2xl overflow-hidden">
+              <div className="bg-[#1A1F2C] px-2 pb-2">
+                <div className="bg-[#F1F0FB] rounded-b-xl overflow-hidden">
                   <img 
                     src="/lovable-uploads/0c1ee21c-5938-485a-8cb1-a238f1c98905.png" 
                     alt="Панель управления ВнешкаPRO" 
-                    className="w-full h-full object-cover scale-110"
+                    className="w-full h-full object-cover scale-[1.2] origin-center"
                   />
                 </div>
               </div>
-              <div className="h-6 w-20 bg-[#1A1F2C] mx-auto -mt-2 rounded-b-lg shadow-md"></div>
-              <div className="h-1 w-32 bg-[#6E59A5] mx-auto rounded-full shadow-md"></div>
+              <div className="h-4 w-16 bg-[#1A1F2C] mx-auto -mt-1 rounded-b-lg shadow-md"></div>
+              <div className="h-0.5 w-24 bg-[#6E59A5] mx-auto rounded-full shadow-md"></div>
             </div>
           </div>
         </div>
