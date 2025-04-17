@@ -30,9 +30,9 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-5xl mx-auto text-center mb-16">
           <div className="flex justify-center mb-12">
-            <div className="text-center">
+            <div className="text-center w-full">
               <div className="font-montserrat text-xl md:text-2xl font-medium max-w-3xl mx-auto mb-6">
-                <span className="text-[#5201fe] font-semibold whitespace-nowrap">
+                <span className="text-[#5201fe] font-semibold whitespace-normal inline-block text-center w-full">
                   Сервис для тех, кто покупает рекламу у блогеров и хочет видеть результат
                 </span>
               </div>
