@@ -52,11 +52,13 @@ const ClientsSection = () => {
               {marketplaces.map((platform, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center gap-4 hover:bg-white/20 transition-all duration-300">
                   {platform.logo && (
-                    <img 
-                      src={platform.logo} 
-                      alt={`${platform.name} logo`} 
-                      className="w-8 h-8 object-contain" 
-                    />
+                    <div className="bg-white rounded-full p-1 flex items-center justify-center w-10 h-10 flex-shrink-0">
+                      <img 
+                        src={platform.logo} 
+                        alt={`${platform.name} logo`} 
+                        className="w-7 h-7 object-contain" 
+                      />
+                    </div>
                   )}
                   <div className="text-white font-medium">{platform.name}</div>
                 </div>
