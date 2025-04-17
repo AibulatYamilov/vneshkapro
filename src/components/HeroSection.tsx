@@ -11,7 +11,48 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
-          <div className="max-w-4xl">
+          <div className="max-w-4xl relative">
+            {/* Marketplace Icons */}
+            <div className="absolute -top-8 -right-20 md:-right-24 lg:-right-32 transform rotate-12 w-20 md:w-28 lg:w-32 z-10 
+                            animate-[float_4s_ease-in-out_infinite] shadow-lg rounded-2xl">
+              <img 
+                src="/lovable-uploads/e35d5d6a-52d6-40da-9a17-e13398c90335.png" 
+                alt="Wildberries"
+                className="w-full h-auto object-contain drop-shadow-md"
+                style={{ objectPosition: '100% 0%', objectFit: 'cover' }}
+              />
+            </div>
+            
+            <div className="absolute top-20 -left-16 md:-left-20 transform -rotate-6 w-16 md:w-24 lg:w-28 z-10 
+                           animate-[float_5s_ease-in-out_infinite_0.5s] shadow-lg rounded-2xl">
+              <img 
+                src="/lovable-uploads/e35d5d6a-52d6-40da-9a17-e13398c90335.png" 
+                alt="Ozon"
+                className="w-full h-auto object-contain drop-shadow-md"
+                style={{ objectPosition: '0% 33%', objectFit: 'cover' }}
+              />
+            </div>
+            
+            <div className="absolute -bottom-10 -right-14 md:-right-20 transform rotate-6 w-14 md:w-20 lg:w-24 z-10 
+                           animate-[float_6s_ease-in-out_infinite_1s] shadow-lg rounded-2xl">
+              <img 
+                src="/lovable-uploads/e35d5d6a-52d6-40da-9a17-e13398c90335.png" 
+                alt="Yandex Market"
+                className="w-full h-auto object-contain drop-shadow-md"
+                style={{ objectPosition: '0% 0%', objectFit: 'cover' }}
+              />
+            </div>
+            
+            <div className="absolute -bottom-4 -left-12 md:-left-16 transform -rotate-12 w-12 md:w-16 lg:w-20 z-10 
+                           animate-[float_4.5s_ease-in-out_infinite_1.5s] shadow-lg rounded-2xl">
+              <img 
+                src="/lovable-uploads/e35d5d6a-52d6-40da-9a17-e13398c90335.png" 
+                alt="SberMarket"
+                className="w-full h-auto object-contain drop-shadow-md"
+                style={{ objectPosition: '0% 100%', objectFit: 'cover' }}
+              />
+            </div>
+            
             <h1 className="font-arial-black text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-[#000000] max-w-4xl">
               <span className="block">Отслеживайте</span>
               <span className="block">эффективность рекламы</span>
@@ -29,9 +70,10 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* Add keyframes for floating animation to tailwind.config.ts */}
     </section>
   );
 };
 
 export default HeroSection;
-
