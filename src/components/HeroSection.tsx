@@ -1,5 +1,5 @@
+
 import React from 'react';
-import Image from 'next/image';
 
 const HeroSection = () => {
   return (
@@ -9,44 +9,36 @@ const HeroSection = () => {
         <div className="relative w-full h-full">
           {/* WB Logo */}
           <div className="absolute top-[10%] left-[5%] transform -rotate-12 opacity-20 animate-[float_7s_infinite]">
-            <Image 
+            <img 
               src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
               alt="Wildberries Logo" 
-              width={200} 
-              height={200} 
               className="w-32 md:w-48 h-auto" 
             />
           </div>
 
           {/* OZON Logo */}
           <div className="absolute top-[25%] right-[10%] transform rotate-6 opacity-20 animate-[float_8s_infinite_0.5s]">
-            <Image 
+            <img 
               src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
               alt="OZON Logo" 
-              width={200} 
-              height={200} 
               className="w-28 md:w-40 h-auto" 
             />
           </div>
 
           {/* Сбер Маркет Logo */}
           <div className="absolute bottom-[20%] left-[15%] transform -rotate-6 opacity-20 animate-[float_9s_infinite_0.3s]">
-            <Image 
+            <img 
               src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
               alt="Сбер Маркет Logo" 
-              width={200} 
-              height={200} 
               className="w-24 md:w-36 h-auto" 
             />
           </div>
 
           {/* Яндекс Маркет Logo */}
           <div className="absolute bottom-[30%] right-[5%] transform rotate-12 opacity-20 animate-[float_10s_infinite_0.7s]">
-            <Image 
+            <img 
               src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
               alt="Яндекс Маркет Logo" 
-              width={200} 
-              height={200} 
               className="w-20 md:w-32 h-auto" 
             />
           </div>
