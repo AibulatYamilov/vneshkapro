@@ -1,46 +1,54 @@
-
 import React from 'react';
-import { ShoppingBag, ShoppingCart, Package, Store } from 'lucide-react';
+import Image from 'next/image';
 
 const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-[#f4efec]">
-      <div className="absolute inset-0 z-0">
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1MjAxZmUiIGZpbGwtb3BhY2l0eT0iLjA1Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTRNMTQgMTRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTQiLz48L2c+PC9nPjwvc3ZnPg==')]"></div>
-        
-        {/* Marketplace icons in flowing style */}
-        <div className="absolute inset-0 overflow-hidden">
-          {/* WB icon */}
-          <div className="absolute top-[15%] left-[10%] md:left-[15%] opacity-10 animate-[float_8s_ease-in-out_infinite]">
-            <div className="bg-white p-4 rounded-full shadow-xl transform -rotate-12">
-              <ShoppingBag className="w-16 h-16 md:w-20 md:h-20 text-[#CB11AB]" />
-            </div>
-            <div className="mt-2 text-center font-bold text-[#CB11AB] opacity-70">WB</div>
+      {/* Background Icons */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="relative w-full h-full">
+          {/* WB Logo */}
+          <div className="absolute top-[10%] left-[5%] transform -rotate-12 opacity-20 animate-[float_7s_infinite]">
+            <Image 
+              src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
+              alt="Wildberries Logo" 
+              width={200} 
+              height={200} 
+              className="w-32 md:w-48 h-auto" 
+            />
           </div>
-          
-          {/* OZON icon */}
-          <div className="absolute top-[30%] right-[12%] md:right-[18%] opacity-10 animate-[float_9s_ease-in-out_infinite_1s]">
-            <div className="bg-white p-4 rounded-full shadow-xl transform rotate-6">
-              <ShoppingCart className="w-14 h-14 md:w-18 md:h-18 text-[#005BFF]" />
-            </div>
-            <div className="mt-2 text-center font-bold text-[#005BFF] opacity-70">OZON</div>
+
+          {/* OZON Logo */}
+          <div className="absolute top-[25%] right-[10%] transform rotate-6 opacity-20 animate-[float_8s_infinite_0.5s]">
+            <Image 
+              src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
+              alt="OZON Logo" 
+              width={200} 
+              height={200} 
+              className="w-28 md:w-40 h-auto" 
+            />
           </div>
-          
-          {/* Yandex.Market icon */}
-          <div className="absolute bottom-[25%] left-[15%] opacity-10 animate-[float_7s_ease-in-out_infinite_0.5s]">
-            <div className="bg-white p-4 rounded-full shadow-xl transform rotate-12">
-              <Package className="w-12 h-12 md:w-16 md:h-16 text-[#F44336]" />
-            </div>
-            <div className="mt-2 text-center font-bold text-[#F44336] opacity-70">Я.Маркет</div>
+
+          {/* Сбер Маркет Logo */}
+          <div className="absolute bottom-[20%] left-[15%] transform -rotate-6 opacity-20 animate-[float_9s_infinite_0.3s]">
+            <Image 
+              src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
+              alt="Сбер Маркет Logo" 
+              width={200} 
+              height={200} 
+              className="w-24 md:w-36 h-auto" 
+            />
           </div>
-          
-          {/* SberMarket icon */}
-          <div className="absolute bottom-[35%] right-[10%] opacity-10 animate-[float_10s_ease-in-out_infinite_1.5s]">
-            <div className="bg-white p-4 rounded-full shadow-xl transform -rotate-6">
-              <Store className="w-10 h-10 md:w-14 md:h-14 text-[#21A038]" />
-            </div>
-            <div className="mt-2 text-center font-bold text-[#21A038] opacity-70">СберМаркет</div>
+
+          {/* Яндекс Маркет Logo */}
+          <div className="absolute bottom-[30%] right-[5%] transform rotate-12 opacity-20 animate-[float_10s_infinite_0.7s]">
+            <Image 
+              src="/lovable-uploads/a1868742-97e2-4d92-9cab-1161520a6103.png" 
+              alt="Яндекс Маркет Logo" 
+              width={200} 
+              height={200} 
+              className="w-20 md:w-32 h-auto" 
+            />
           </div>
         </div>
       </div>
