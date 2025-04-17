@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingBag, Package, Store, ShoppingCart, ExternalLink } from 'lucide-react';
+import { ShoppingBag, Package, Store, ShoppingCart, ExternalLink, MessageCircle, MessageSquare, Users, Video, Share } from 'lucide-react';
 
 const ClientsSection = () => {
   const marketplaces = [
@@ -22,16 +22,16 @@ const ClientsSection = () => {
     },
     { 
       name: 'Другие платформы',
-      icon: ExternalLink
+      icon: Share
     }
   ];
 
   const platformLogos = [
-    { name: 'Telegram', icon: ExternalLink },
-    { name: 'ВКонтакте', icon: ExternalLink },
-    { name: 'Одноклассники', icon: ExternalLink },
-    { name: 'Rutube', icon: ExternalLink },
-    { name: 'Другие платформы', icon: ExternalLink }
+    { name: 'Telegram', icon: MessageCircle },
+    { name: 'ВКонтакте', icon: MessageSquare },
+    { name: 'Одноклассники', icon: Users },
+    { name: 'Rutube', icon: Video },
+    { name: 'Другие платформы', icon: Share }
   ];
 
   return (
