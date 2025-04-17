@@ -9,49 +9,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1MjAxZmUiIGZpbGwtb3BhY2l0eT0iLjA1Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTRNMTQgMTRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTQiLz48L2c+PC9nPjwvc3ZnPg==')]"></div>
       </div>
       
-      {/* Marketplace Icons */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        {/* Yellow "M" icon */}
-        <div className="absolute top-[15%] right-[10%] w-16 h-16 md:w-20 md:h-20 animate-float-slow opacity-90 drop-shadow-md">
-          <img 
-            src="/lovable-uploads/d664d68d-0391-4381-b5c5-6e515b96723c.png" 
-            alt="Marketplace Icon" 
-            className="w-full h-full object-cover object-[-10px_-10px]"
-            style={{ clipPath: 'inset(0 0 75% 70%)' }}
-          />
-        </div>
-        
-        {/* Blue "OZON" icon */}
-        <div className="absolute bottom-[35%] left-[10%] w-14 h-14 md:w-16 md:h-16 animate-float-medium opacity-90 drop-shadow-md">
-          <img 
-            src="/lovable-uploads/d664d68d-0391-4381-b5c5-6e515b96723c.png" 
-            alt="Marketplace Icon" 
-            className="w-full h-full object-cover object-[-10px_-390px]"
-            style={{ clipPath: 'inset(60% 70% 20% 0)' }}
-          />
-        </div>
-        
-        {/* Purple "WB" icon */}
-        <div className="absolute top-[60%] right-[15%] w-16 h-16 md:w-20 md:h-20 animate-float-rotate opacity-90 drop-shadow-md">
-          <img 
-            src="/lovable-uploads/d664d68d-0391-4381-b5c5-6e515b96723c.png" 
-            alt="Marketplace Icon" 
-            className="w-full h-full object-cover object-[-430px_-390px]"
-            style={{ clipPath: 'inset(60% 0 20% 70%)' }}
-          />
-        </div>
-        
-        {/* Green "СберМаркет" icon */}
-        <div className="absolute bottom-[20%] left-[20%] w-12 h-12 md:w-14 md:h-14 animate-float-fast opacity-90 drop-shadow-md">
-          <img 
-            src="/lovable-uploads/d664d68d-0391-4381-b5c5-6e515b96723c.png" 
-            alt="Marketplace Icon" 
-            className="w-full h-full object-cover object-[-170px_-675px]"
-            style={{ clipPath: 'inset(85% 75% 0 15%)' }}
-          />
-        </div>
-      </div>
-      
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
@@ -77,3 +34,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
