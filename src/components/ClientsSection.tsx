@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingBag, Package, Store, ShoppingCart, ExternalLink, MessageCircle, MessageSquare, Users, Video, Share } from 'lucide-react';
+import { ShoppingBag, Package, Store, ShoppingCart, Share, MessageCircle, MessageSquare, Users, Video } from 'lucide-react';
 
 const ClientsSection = () => {
   const marketplaces = [
