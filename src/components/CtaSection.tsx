@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const CtaSection = () => {
@@ -37,7 +37,6 @@ const CtaSection = () => {
             
             <div className="flex items-center justify-center p-5 mb-14">
               <div className="inline-flex items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-[#f4f7ff] to-[#e7dcff] shadow-md transition-all duration-300">
-                <CheckCircle className="w-6 h-6 text-[#78e29e] flex-shrink-0 mr-3" />
                 <p className="text-[#2a4b8d] font-medium">Техническая поддержка 24/7</p>
               </div>
             </div>
@@ -75,3 +74,4 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
+
