@@ -35,12 +35,6 @@ const CtaSection = () => {
               </span>
             </h2>
             
-            <div className="flex items-center justify-center p-5 mb-14">
-              <div className="inline-flex items-center px-6 py-4 rounded-2xl bg-gradient-to-r from-[#f4f7ff] to-[#e7dcff] shadow-md transition-all duration-300">
-                <p className="text-[#2a4b8d] font-medium">Техническая поддержка 24/7</p>
-              </div>
-            </div>
-            
             <div className="mt-10 text-center">
               <div 
                 className="relative inline-block"
@@ -74,4 +68,3 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
-

@@ -31,7 +31,7 @@ const ClientsSection = () => {
           {/* Первая колонка - Маркетплейсы */}
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
             <h3 className="font-['Carter_One'] text-2xl text-white mb-6 text-center">
-              Не важно, где ты продаешь
+              Не важно, где вы продаете
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {marketplaces.map((platform, index) => (
@@ -45,7 +45,7 @@ const ClientsSection = () => {
           {/* Вторая колонка - Рекламные платформы */}
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
             <h3 className="font-['Carter_One'] text-2xl text-white mb-6 text-center">
-              Не важно, где размещаешь рекламу
+              Не важно, где ваша реклама
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {platformLogos.map((platform, index) => (
