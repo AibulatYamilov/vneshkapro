@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -23,6 +24,15 @@ export default {
 			'arial-black': ['"Arial Black"', 'Arial', 'sans-serif'],
 		},
 		extend: {
+			keyframes: {
+				'float-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+			},
+			animation: {
+				'float-slow': 'float-slow 6s ease-in-out infinite',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
