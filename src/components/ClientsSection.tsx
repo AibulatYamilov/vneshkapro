@@ -3,11 +3,26 @@ import React from 'react';
 
 const ClientsSection = () => {
   const marketplaces = [
-    { name: 'Wildberries' },
-    { name: 'Ozon' },
-    { name: 'Яндекс Маркет' },
-    { name: 'Мегамаркет' },
-    { name: 'Другие платформы' }
+    { 
+      name: 'Wildberries', 
+      logo: '/lovable-uploads/wildberies_logo.png' 
+    },
+    { 
+      name: 'Ozon', 
+      logo: '/lovable-uploads/ozon_logo.png' 
+    },
+    { 
+      name: 'Яндекс Маркет', 
+      logo: '/lovable-uploads/yandexmarket_logo.png' 
+    },
+    { 
+      name: 'Мегамаркет', 
+      logo: '/lovable-uploads/megamarket_logo.png' 
+    },
+    { 
+      name: 'Другие платформы',
+      logo: null
+    }
   ];
 
   const platformLogos = [
@@ -36,6 +51,13 @@ const ClientsSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {marketplaces.map((platform, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center gap-4 hover:bg-white/20 transition-all duration-300">
+                  {platform.logo && (
+                    <img 
+                      src={platform.logo} 
+                      alt={`${platform.name} logo`} 
+                      className="w-8 h-8 object-contain" 
+                    />
+                  )}
                   <div className="text-white font-medium">{platform.name}</div>
                 </div>
               ))}
