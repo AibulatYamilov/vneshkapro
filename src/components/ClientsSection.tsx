@@ -1,37 +1,21 @@
 
 import React from 'react';
-import { ShoppingBag, Package, Store, ShoppingCart, Share, MessageCircle, MessageSquare, Users, Video } from 'lucide-react';
 
 const ClientsSection = () => {
   const marketplaces = [
-    { 
-      name: 'Wildberries', 
-      icon: ShoppingBag
-    },
-    { 
-      name: 'Ozon', 
-      icon: Package 
-    },
-    { 
-      name: 'Яндекс Маркет', 
-      icon: Store
-    },
-    { 
-      name: 'Мегамаркет', 
-      icon: ShoppingCart
-    },
-    { 
-      name: 'Другие платформы',
-      icon: Share
-    }
+    { name: 'Wildberries' },
+    { name: 'Ozon' },
+    { name: 'Яндекс Маркет' },
+    { name: 'Мегамаркет' },
+    { name: 'Другие платформы' }
   ];
 
   const platformLogos = [
-    { name: 'Telegram', icon: MessageCircle },
-    { name: 'ВКонтакте', icon: MessageSquare },
-    { name: 'Одноклассники', icon: Users },
-    { name: 'Rutube', icon: Video },
-    { name: 'Другие платформы', icon: Share }
+    { name: 'Telegram' },
+    { name: 'ВКонтакте' },
+    { name: 'Одноклассники' },
+    { name: 'Rutube' },
+    { name: 'Другие платформы' }
   ];
 
   return (
@@ -52,9 +36,6 @@ const ClientsSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {marketplaces.map((platform, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center gap-4 hover:bg-white/20 transition-all duration-300">
-                  <div className="bg-white rounded-full p-1 flex items-center justify-center w-10 h-10 flex-shrink-0">
-                    <platform.icon className="w-6 h-6 text-primary" />
-                  </div>
                   <div className="text-white font-medium">{platform.name}</div>
                 </div>
               ))}
@@ -69,9 +50,6 @@ const ClientsSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {platformLogos.map((platform, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center gap-4 hover:bg-white/20 transition-all duration-300">
-                  <div className="bg-white rounded-full p-1 flex items-center justify-center w-10 h-10 flex-shrink-0">
-                    <platform.icon className="w-6 h-6 text-primary" />
-                  </div>
                   <div className="text-white font-medium">{platform.name}</div>
                 </div>
               ))}
