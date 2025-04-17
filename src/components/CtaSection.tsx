@@ -27,11 +27,8 @@ const CtaSection = () => {
             </div>
             
             <h2 className="font-['Carter_One'] text-3xl md:text-5xl text-[#2a4b8d] mb-12 text-center leading-tight">
-              <span className="inline-block">Ты не просто продаёшь.</span>{" "}
-              <span className="inline-block text-[#5201fe]">Ты считаешь деньги.</span>
-              <br />
               <span className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-transparent bg-clip-text">
-                Мы поможем считать ещё точнее.
+                Начните отслеживать эффективность уже сегодня
               </span>
             </h2>
             
@@ -45,7 +42,7 @@ const CtaSection = () => {
                 <Button 
                   className="relative bg-gradient-to-r from-[#5201fe] to-[#78e29e] hover:from-[#78e29e] hover:to-[#5201fe] text-white font-bold px-10 py-7 rounded-full shadow-lg transition-all duration-500 text-lg h-auto"
                 >
-                  Начать анализировать <ArrowRight className="ml-2 w-5 h-5" />
+                  Начать с ВнешкаPRO <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
             </div>
@@ -68,3 +65,4 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
+
