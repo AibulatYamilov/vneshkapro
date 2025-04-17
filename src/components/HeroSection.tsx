@@ -9,18 +9,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1MjAxZmUiIGZpbGwtb3BhY2l0eT0iLjA1Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTRNMTQgMTRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTQiLz48L2c+PC9nPjwvc3ZnPg==')]"></div>
       </div>
       
-      {/* Marketplace icons section */}
-      <div className="absolute right-0 md:right-10 lg:right-20 top-1/2 transform -translate-y-1/2 z-0 hidden md:block">
-        <div className="relative w-[200px] h-[280px]">
-          {/* Yellow M icon */}
-          <img 
-            src="/lovable-uploads/90551961-c674-4936-8123-6b5d38c9a568.png" 
-            alt="Marketplace icons" 
-            className="w-full h-full object-contain animate-float shadow-2xl rounded-xl"
-          />
-        </div>
-      </div>
-      
       <div className="container mx-auto px-4 md:px-8 z-10 pt-20">
         <div className="flex flex-col items-center justify-center text-center">
           <div className="max-w-4xl">
@@ -46,3 +34,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
