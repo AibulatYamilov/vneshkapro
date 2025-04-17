@@ -1,36 +1,37 @@
 
 import React from 'react';
+import { ShoppingBag, Package, Store, ShoppingCart, ExternalLink } from 'lucide-react';
 
 const ClientsSection = () => {
   const marketplaces = [
     { 
       name: 'Wildberries', 
-      logo: '/lovable-uploads/wildberies_logo.png' 
+      icon: ShoppingBag
     },
     { 
       name: 'Ozon', 
-      logo: '/lovable-uploads/ozon_logo.png' 
+      icon: Package 
     },
     { 
       name: 'Яндекс Маркет', 
-      logo: '/lovable-uploads/yandexmarket_logo.png' 
+      icon: Store
     },
     { 
       name: 'Мегамаркет', 
-      logo: '/lovable-uploads/megamarket_logo.png' 
+      icon: ShoppingCart
     },
     { 
       name: 'Другие платформы',
-      logo: null
+      icon: ExternalLink
     }
   ];
 
   const platformLogos = [
-    { name: 'Telegram' },
-    { name: 'ВКонтакте' },
-    { name: 'Одноклассники' },
-    { name: 'Rutube' },
-    { name: 'Другие платформы' }
+    { name: 'Telegram', icon: ExternalLink },
+    { name: 'ВКонтакте', icon: ExternalLink },
+    { name: 'Одноклассники', icon: ExternalLink },
+    { name: 'Rutube', icon: ExternalLink },
+    { name: 'Другие платформы', icon: ExternalLink }
   ];
 
   return (
@@ -51,15 +52,9 @@ const ClientsSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {marketplaces.map((platform, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center gap-4 hover:bg-white/20 transition-all duration-300">
-                  {platform.logo && (
-                    <div className="bg-white rounded-full p-1 flex items-center justify-center w-10 h-10 flex-shrink-0">
-                      <img 
-                        src={platform.logo} 
-                        alt={`${platform.name} logo`} 
-                        className="w-7 h-7 object-contain" 
-                      />
-                    </div>
-                  )}
+                  <div className="bg-white rounded-full p-1 flex items-center justify-center w-10 h-10 flex-shrink-0">
+                    <platform.icon className="w-6 h-6 text-primary" />
+                  </div>
                   <div className="text-white font-medium">{platform.name}</div>
                 </div>
               ))}
@@ -74,6 +69,9 @@ const ClientsSection = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {platformLogos.map((platform, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm p-4 rounded-xl flex items-center gap-4 hover:bg-white/20 transition-all duration-300">
+                  <div className="bg-white rounded-full p-1 flex items-center justify-center w-10 h-10 flex-shrink-0">
+                    <platform.icon className="w-6 h-6 text-primary" />
+                  </div>
                   <div className="text-white font-medium">{platform.name}</div>
                 </div>
               ))}
