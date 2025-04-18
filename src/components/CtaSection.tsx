@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useState } from "react";
@@ -42,7 +41,7 @@ const CtaSection = () => {
                 <Button 
                   className="relative bg-gradient-to-r from-[#5201fe] to-[#78e29e] hover:from-[#78e29e] hover:to-[#5201fe] text-white font-bold px-10 py-7 rounded-full shadow-lg transition-all duration-500 text-lg h-auto"
                 >
-                  Начать с ВнешкаPRO <ArrowRight className="ml-2 w-5 h-5" />
+                  Начать с ВнешкаPRO. Попробуйте бесплатно <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
             </div>
@@ -65,4 +64,3 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
-
