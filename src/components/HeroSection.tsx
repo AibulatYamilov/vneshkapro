@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 const HeroSection = () => {
@@ -18,12 +19,17 @@ const HeroSection = () => {
             <p className="font-montserrat text-xl md:text-2xl mb-10 font-medium tracking-wide text-[#5201fe]">
               Не гадайте. Знайте точно.
             </p>
-            <a 
-              href="#features" 
-              className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
-            >
-              Попробуйте бесплатно
-            </a>
+            <div className="flex flex-col items-center">
+              <a 
+                href="#features" 
+                className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1 mb-4"
+              >
+                Начать с ВнешкаPRO
+              </a>
+              <p className="text-sm text-gray-600 font-medium">
+                Убедитесь в пользе, попробуйте бесплатно!
+              </p>
+            </div>
           </div>
         </div>
       </div>
