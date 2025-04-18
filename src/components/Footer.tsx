@@ -17,7 +17,7 @@ const Footer = () => {
               className="text-[#ffffff] hover:text-[#78e29e] transition-colors duration-300 flex items-center justify-center gap-2"
             >
               <Send size={24} className="text-[#78e29e] mr-2" />
-              <span className="font-['Carter_One'] text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#D946EF] to-[#8B5CF6] hover:from-[#8B5CF6] hover:to-[#D946EF] transition-all duration-300">
+              <span className="font-['Carter_One'] text-2xl text-white hover:opacity-80 transition-opacity duration-300">
                 Свяжитесь с нами в Telegram: @VneshkaProBot
               </span>
             </a>
