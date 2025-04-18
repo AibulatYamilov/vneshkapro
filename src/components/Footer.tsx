@@ -14,10 +14,10 @@ const Footer = () => {
               href="https://t.me/VneshkaProBot" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-[#ffffff] hover:text-[#78e29e] transition-colors duration-300 flex items-center justify-center gap-2"
+              className="text-white/80 hover:text-[#78e29e] transition-colors duration-300 flex items-center justify-center gap-2"
             >
-              <Send size={24} className="text-[#78e29e] mr-2" />
-              <span className="font-['Carter_One'] text-2xl text-white hover:opacity-80 transition-opacity duration-300">
+              <Send size={24} className="text-[#78e29e] opacity-70 mr-2" />
+              <span className="font-['Carter_One'] text-2xl text-white/90 hover:text-white/70 transition-opacity duration-300">
                 Свяжитесь с нами в Telegram: @VneshkaProBot
               </span>
             </a>
