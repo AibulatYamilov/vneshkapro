@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -21,8 +20,8 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleStartClick = () => {
+    window.open('https://app.vneshka.pro/', '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -39,7 +38,7 @@ const Navbar = () => {
             variant="default" 
             size="default" 
             className="bg-gradient-to-r from-[#5201fe] to-[#2a4b8d] text-white hover:from-[#5201fe]/90 hover:to-[#2a4b8d]/90 transition-all"
-            onClick={() => window.location.href = "#cta"}
+            onClick={handleStartClick}
           >
             Начать
           </Button>
