@@ -1,9 +1,14 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 const CtaSection = () => {
   const [isHovered, setIsHovered] = useState(false);
+  
+  const handleTryFreeClick = () => {
+    window.open('https://app.vneshka.pro/', '_blank', 'noopener,noreferrer');
+  };
   
   return (
     <section id="cta" className="py-24 relative overflow-hidden">
@@ -37,6 +42,7 @@ const CtaSection = () => {
               >
                 <div className={`absolute -inset-1 bg-gradient-to-r from-[#5201fe] to-[#78e29e] rounded-full blur opacity-70 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}></div>
                 <Button 
+                  onClick={handleTryFreeClick}
                   className="relative bg-gradient-to-r from-[#5201fe] to-[#78e29e] hover:from-[#78e29e] hover:to-[#5201fe] text-white font-bold px-10 py-7 rounded-full shadow-lg transition-all duration-500 text-lg h-auto"
                 >
                   Попробуйте бесплатно <ArrowRight className="ml-2 w-5 h-5" />
@@ -62,3 +68,4 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
+
