@@ -25,9 +25,6 @@ const HeroSection = () => {
               >
                 Убедитесь в пользе, попробуйте бесплатно!
               </a>
-              <p className="text-lg text-[#D946EF] font-bold tracking-wider bg-[#e7dcff]/50 px-6 py-3 rounded-full shadow-md border border-[#D946EF]/20 transform transition-all duration-300 hover:scale-105">
-                Начать с ВнешкаPRO
-              </p>
             </div>
           </div>
         </div>
