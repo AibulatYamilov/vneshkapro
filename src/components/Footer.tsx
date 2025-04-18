@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Send } from 'lucide-react'; // Import Telegram-like icon
+import { Send } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,6 +21,9 @@ const Footer = () => {
                 Свяжитесь с нами в Telegram: @VneshkaProBot
               </p>
             </a>
+            <p className="text-sm mt-2 text-[#78e29e] italic">
+              Начните анализировать без затрат — первую ссылку вы получаете бесплатно!
+            </p>
           </div>
           
           <h2 className="text-3xl font-bold mb-6 text-white font-['Cormorant_Garamond']">
