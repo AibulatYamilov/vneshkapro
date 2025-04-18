@@ -1,6 +1,11 @@
+
 import React from 'react';
 
 const HeroSection = () => {
+  const handleStartFree = () => {
+    window.open('https://app.vneshka.pro/', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-[#f4efec]">
       <div className="absolute inset-0 z-0">
@@ -19,12 +24,12 @@ const HeroSection = () => {
               Не гадайте. Знайте точно.
             </p>
             <div className="flex flex-col items-center">
-              <a 
-                href="#features" 
+              <button 
+                onClick={handleStartFree}
                 className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1 mb-4"
               >
                 Убедитесь в пользе, попробуйте бесплатно!
-              </a>
+              </button>
             </div>
           </div>
         </div>
