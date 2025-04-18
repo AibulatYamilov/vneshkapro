@@ -26,7 +26,7 @@ const HeroSection = () => {
               >
                 Начать с ВнешкаPRO
               </a>
-              <p className="text-sm text-gray-600 font-medium">
+              <p className="text-base text-[#9b87f5] font-semibold tracking-wider bg-[#e7dcff]/30 px-4 py-2 rounded-full">
                 Убедитесь в пользе, попробуйте бесплатно!
               </p>
             </div>
