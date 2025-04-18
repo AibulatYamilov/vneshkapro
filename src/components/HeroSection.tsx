@@ -1,11 +1,9 @@
-
 import React from 'react';
 
 const HeroSection = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-[#f4efec]">
       <div className="absolute inset-0 z-0">
-        {/* Adding some subtle pattern */}
         <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiM1MjAxZmUiIGZpbGwtb3BhY2l0eT0iLjA1Ij48cGF0aCBkPSJNMzYgMzRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTRNMTQgMTRjMC0yLjIxIDEuNzktNCA0LTRzNCAxLjc5IDQgNC0xLjc5IDQtNCA0LTQtMS43OS00LTQiLz48L2c+PC9nPjwvc3ZnPg==')]"></div>
       </div>
       
@@ -24,7 +22,7 @@ const HeroSection = () => {
               href="#features" 
               className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
             >
-              Начать с ВнешкаPRO
+              Попробуйте бесплатно
             </a>
           </div>
         </div>
@@ -34,4 +32,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
