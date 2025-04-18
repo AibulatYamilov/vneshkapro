@@ -23,10 +23,10 @@ const HeroSection = () => {
                 href="#features" 
                 className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-white font-bold text-lg px-10 py-3 rounded-full hover:shadow-lg hover:shadow-[#5201fe]/30 transition-all duration-300 ease-in-out transform hover:-translate-y-1 mb-4"
               >
-                Начать с ВнешкаPRO
+                Убедитесь в пользе, попробуйте бесплатно!
               </a>
               <p className="text-lg text-[#D946EF] font-bold tracking-wider bg-[#e7dcff]/50 px-6 py-3 rounded-full shadow-md border border-[#D946EF]/20 transform transition-all duration-300 hover:scale-105">
-                Убедитесь в пользе, попробуйте бесплатно!
+                Начать с ВнешкаPRO
               </p>
             </div>
           </div>
