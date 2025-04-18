@@ -49,6 +49,10 @@ const CtaSection = () => {
                   Начать с ВнешкаPRO <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </div>
+              
+              <p className="text-center text-sm text-[#78e29e] mt-4 italic">
+                Попробуйте бесплатно. Убедитесь в пользе!
+              </p>
             </div>
           </div>
         </div>
