@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Send } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,11 +14,12 @@ const Footer = () => {
               href="https://t.me/VneshkaProBot" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-[#ffffff] hover:text-[#78e29e] transition-colors duration-300"
+              className="text-[#ffffff] hover:text-[#78e29e] transition-colors duration-300 flex items-center justify-center gap-2"
             >
-              <p className="font-['Carter_One'] text-3xl mb-4">
+              <Send size={24} className="text-[#78e29e] mr-2" />
+              <span className="font-['Carter_One'] text-2xl bg-clip-text text-transparent bg-gradient-to-r from-[#78e29e] to-[#5201fe] hover:from-[#5201fe] hover:to-[#78e29e] transition-all duration-300">
                 Свяжись с нами в Telegram: @VneshkaProBot
-              </p>
+              </span>
             </a>
           </div>
           
