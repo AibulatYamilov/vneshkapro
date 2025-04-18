@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const HeroSection = () => {
@@ -26,7 +25,7 @@ const HeroSection = () => {
               >
                 Начать с ВнешкаPRO
               </a>
-              <p className="text-base text-[#9b87f5] font-semibold tracking-wider bg-[#e7dcff]/30 px-4 py-2 rounded-full">
+              <p className="text-lg text-[#D946EF] font-bold tracking-wider bg-[#e7dcff]/50 px-6 py-3 rounded-full shadow-md border border-[#D946EF]/20 transform transition-all duration-300 hover:scale-105">
                 Убедитесь в пользе, попробуйте бесплатно!
               </p>
             </div>
