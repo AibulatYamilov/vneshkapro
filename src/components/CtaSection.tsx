@@ -26,11 +26,15 @@ const CtaSection = () => {
               </div>
             </div>
             
-            <h2 className="font-['Carter_One'] text-3xl md:text-5xl text-[#2a4b8d] mb-12 text-center leading-tight">
+            <h2 className="font-['Carter_One'] text-3xl md:text-5xl text-[#2a4b8d] mb-6 text-center leading-tight">
               <span className="inline-block bg-gradient-to-r from-[#5201fe] to-[#78e29e] text-transparent bg-clip-text">
                 Начните отслеживать эффективность уже сегодня
               </span>
             </h2>
+
+            <p className="text-center text-lg font-medium text-[#78e29e] mb-10 italic">
+              Начните анализировать без затрат — первую ссылку вы получаете бесплатно!
+            </p>
             
             <div className="mt-10 text-center">
               <div 
@@ -65,4 +69,3 @@ const CtaSection = () => {
 };
 
 export default CtaSection;
-
